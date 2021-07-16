@@ -50,6 +50,12 @@ public class SFSclass {
 		 //browser xpaths
 		//driver.get("https://github.com/babusatti/sattibaburepository");
 		driver.get(url);
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		//driver.findElement(By.xpath("//input[@type='email']")).sendKeys(username);
 		
 		//screenshots
@@ -95,7 +101,12 @@ public class SFSclass {
 	        }
     	//browser xpaths
     	driver.get(url2);
-    	
+    	try {
+			Thread.sleep(500);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
     	//screenshots
     	TakesScreenshot scrShot =((TakesScreenshot)driver);
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
@@ -139,6 +150,12 @@ public class SFSclass {
 	        }
     	//browser xpaths here
     	driver.get(url3);
+	    try {
+			Thread.sleep(500);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
     	
     	//screenshots
     	TakesScreenshot scrShot =((TakesScreenshot)driver);
