@@ -36,7 +36,7 @@ public class SFSclass {
 		//for config.xml
 		String url = null;
 		String path=System.getProperty("user.dir");
-		 try (InputStream input = new FileInputStream(path+"/src/test/resources/config.properties")) {
+		 try (InputStream input = new FileInputStream(path+"/config.properties")) {
 	            Properties prop = new Properties();
 	        // load a properties file
 	        prop.load(input);
@@ -83,7 +83,7 @@ public class SFSclass {
     	
     	String url2 = null;
 		String path=System.getProperty("user.dir");
-		 try (InputStream input = new FileInputStream(path+"config.properties")) {
+		 try (InputStream input = new FileInputStream(path+"/config.properties")) {
 	            Properties prop = new Properties();
 	        // load a properties file
 	        prop.load(input);
@@ -127,7 +127,7 @@ public class SFSclass {
     	
     	String url3 = null;
 		String path=System.getProperty("user.dir");
-		 try (InputStream input = new FileInputStream(path+"config.properties")) {
+		 try (InputStream input = new FileInputStream(path+"/config.properties")) {
 	            Properties prop = new Properties();
 	        // load a properties file
 	        prop.load(input);
