@@ -84,7 +84,8 @@ public class Parameterclass {
     	
     	//browser xpaths
     	driver.get(fortifyurl);
-    	
+    	driver.findElement(By.xpath("//input[@type='text']")).sendKeys(username);
+	driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
     	//screenshots
     	TakesScreenshot scrShot =((TakesScreenshot)driver);
         File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
@@ -124,7 +125,8 @@ public class Parameterclass {
     	
     	//browser xpaths here
     	driver.get(synurl);
-	   
+	driver.findElement(By.xpath("//input[@type='text']")).sendKeys(username);
+	driver.findElement(By.xpath("//input[@name='password']")).sendKeys(password);
     	
     	//screenshots
     	TakesScreenshot scrShot =((TakesScreenshot)driver);
