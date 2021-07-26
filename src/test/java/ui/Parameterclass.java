@@ -25,7 +25,7 @@ public class Parameterclass {
 	String password = System.getProperty("password");
 	System.out.println("Reading Sonar url from jenkins");
 	String sonarurl = System.getProperty("sonarurl");
-	System.out.println(username);
+	//System.out.println(username);
 		
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		
@@ -66,7 +66,7 @@ public class Parameterclass {
     	String password = System.getProperty("password");
     	System.out.println("reading fortify url from jenkins");
     	String fortifyurl = System.getProperty("fortifyurl");
-    	System.out.println(username);
+    	//System.out.println(username);
     	
     	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
     	
@@ -109,7 +109,7 @@ public class Parameterclass {
     	String password = System.getProperty("password");
     	System.out.println("reading Syn url from jenkins");
     	String synurl = System.getProperty("synurl");
-    	System.out.println(username);
+    	//System.out.println(username);
     	
     	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
     	
