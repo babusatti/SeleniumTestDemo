@@ -1,9 +1,9 @@
 pipeline {
-    agent any
+    agent { label 'windows' }
 
     tools {
         // Install the Maven version configured as "M3" and add it to the path.
-        maven "Maven3.8.1"
+        maven "Maven 3.3.9"
     }
     parameters { //string(name: 'username', defaultValue: 'sattibabu', description: 'enter your username')
     
