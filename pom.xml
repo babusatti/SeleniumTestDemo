@@ -43,6 +43,24 @@
     <scope>compile</scope>
 </dependency>
   </dependencies>
+	
+	<pluginRepositories>
+		<pluginRepository>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+			<id>central</id>
+			<name>plugins-release</name>
+			<url>https://artifactory.platform.manulife.io/artifactory/plugins-release</url>
+		</pluginRepository>
+		<pluginRepository>
+			<snapshots/>
+			<id>snapshots</id>
+			<name>plugins-release</name>
+			<url>https://artifactory.platform.manulife.io/artifactory/plugins-release</url>
+		</pluginRepository>
+	</pluginRepositories>
+	
   <build>
   <plugins>
 			<plugin>
