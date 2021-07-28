@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.Test;
+import org.openqa.selenium.WebElement;
 
 public class Parameterclass {
 		
@@ -51,7 +52,7 @@ public class Parameterclass {
 		//driver.findElement(By.xpath("//input[@class='button']")).click();
 		//driver.findElement(By.xpath("//button[@title='Log in']")).click();
 		//driver.findElement(By.xpath("//button[@class='button']")).click();
-		btn_Login=driver.findElement(By.xpath("//button[normalize-space(text())='Log in']"));
+		WebElement btn_Login=driver.findElement(By.xpath("//button[normalize-space(text())='Log in']"));
                 btn_Login.click();
 		//screenshots
 		TakesScreenshot scrShot =((TakesScreenshot)driver);
