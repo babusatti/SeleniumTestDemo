@@ -40,6 +40,12 @@ public class Parameterclass {
 		
 		
 		driver.get(sonarurl);
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		driver.findElement(By.xpath("//input[@type='login']")).sendKeys(username);
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
