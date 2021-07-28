@@ -40,8 +40,9 @@ public class Parameterclass {
 		
 		
 		driver.get(sonarurl);
-		driver.findElement(By.xpath("//input[@id='login']")).sendKeys(username);
-		driver.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
+		driver.findElement(By.xpath("//input[@type='login']")).sendKeys(username);
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
+		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		
 		//screenshots
 		TakesScreenshot scrShot =((TakesScreenshot)driver);
