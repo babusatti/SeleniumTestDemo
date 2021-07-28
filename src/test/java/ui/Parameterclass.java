@@ -58,7 +58,7 @@ public class Parameterclass {
 		//login.click();			
        		 System.out.println("Login Done with Click");
 		try {
-			Thread.sleep(3200);
+			Thread.sleep(4000);
 		} catch (InterruptedException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
