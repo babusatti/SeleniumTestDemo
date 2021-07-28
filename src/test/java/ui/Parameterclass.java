@@ -54,8 +54,11 @@ public class Parameterclass {
 		//driver.findElement(By.xpath("//button[@class='button']")).click();
 		WebElement btn_Login=driver.findElement(By.xpath("//button[normalize-space(text())='Log in']"));
                 btn_Login.click();
+		//WebElement login = driver.findElement(By.type("submit"));
+		//login.click();			
+       		 System.out.println("Login Done with Click");
 		try {
-			Thread.sleep(500);
+			Thread.sleep(900);
 		} catch (InterruptedException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
