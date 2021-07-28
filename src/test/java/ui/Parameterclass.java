@@ -54,6 +54,12 @@ public class Parameterclass {
 		//driver.findElement(By.xpath("//button[@class='button']")).click();
 		WebElement btn_Login=driver.findElement(By.xpath("//button[normalize-space(text())='Log in']"));
                 btn_Login.click();
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		//screenshots
 		TakesScreenshot scrShot =((TakesScreenshot)driver);
 
