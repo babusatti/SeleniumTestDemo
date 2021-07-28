@@ -31,7 +31,7 @@ public class Parameterclass {
 		
 		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);
-		options.addArguments("window-size=1280,700");
+		options.addArguments("window-size=1280,720");
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		options.merge(capabilities);
