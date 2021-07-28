@@ -42,7 +42,7 @@ public class Parameterclass {
 		
 		driver.get(sonarurl);
 		try {
-			Thread.sleep(500);
+			Thread.sleep(1000);
 		} catch (InterruptedException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
