@@ -46,7 +46,7 @@ public class Parameterclass {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
-		driver.findElement(By.xpath("//input[@type='login']")).sendKeys(username);
+		driver.findElement(By.xpath("//input[@name='login']")).sendKeys(username);
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		
