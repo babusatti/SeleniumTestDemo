@@ -57,7 +57,7 @@ public class Parameterclass {
 				}
 		driver.quit();
 	}
-    @Test
+  /*  @Test
 	public void Fortify() {
     	
     	System.out.println("reading username from jenkins");
@@ -142,6 +142,6 @@ public class Parameterclass {
 		driver.quit();
 		
 	}
-	
+*/	
 	
 }
