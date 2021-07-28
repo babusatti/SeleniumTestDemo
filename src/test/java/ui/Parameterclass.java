@@ -50,7 +50,9 @@ public class Parameterclass {
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys(password);
 		//driver.findElement(By.xpath("//input[@class='button']")).click();
 		//driver.findElement(By.xpath("//button[@title='Log in']")).click();
-		driver.findElement(By.xpath("//button[@class='button']")).click();
+		//driver.findElement(By.xpath("//button[@class='button']")).click();
+		btn_Login=driver.findElement(By.xpath("//button[normalize-space(text())='Log in']"));
+                btn_Login.click();
 		//screenshots
 		TakesScreenshot scrShot =((TakesScreenshot)driver);
 
