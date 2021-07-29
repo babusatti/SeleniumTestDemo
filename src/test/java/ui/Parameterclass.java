@@ -40,7 +40,7 @@ public class Parameterclass {
 		
 		
 		
-		driver.get(sonarurl);
+		driver.get("https://sonar.manulife.com/sessions/new");
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e1) {
@@ -57,6 +57,13 @@ public class Parameterclass {
 		//WebElement login = driver.findElement(By.type("submit"));
 		//login.click();			
        		 System.out.println("Login Done with Click");
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		driver.get(sonarurl);
 		try {
 			Thread.sleep(4000);
 		} catch (InterruptedException e1) {
