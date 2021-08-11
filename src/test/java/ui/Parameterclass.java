@@ -28,7 +28,7 @@ public class Parameterclass {
 	String sonarurl = System.getProperty("sonarurl");
 	//System.out.println(username);
 		
-		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "chromedriver");
 		
 		ChromeOptions options = new ChromeOptions();
 		options.setHeadless(true);
